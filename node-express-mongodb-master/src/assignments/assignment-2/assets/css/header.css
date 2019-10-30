@@ -9,7 +9,7 @@ HEADER
 - - - - - - - - - - - - - - - - - - - - - - - - */
 header {
   height: 80px;
-  background: #333;
+  background:black;
 }
 
 header nav .wrapper {
@@ -20,14 +20,14 @@ header nav .wrapper {
 }
 
 header .logo {
-  background: url('./assets/logo.svg');
+  background: url('img/logo.svg');
   height: 30px;
   width: 30px;
   background-size: 30px;
 }
 
 header .menu {
-  background: url('./assets/menu.svg');
+  background: url('img/menu.svg');
   height: 30px;
   width: 30px;
   background-size: 30px;
@@ -35,7 +35,7 @@ header .menu {
 }
 
 header .close {
-  background: url('./assets/close.svg');
+  background: url('img/close.svg');
   height: 30px;
   width: 30px;
   background-size: 30px;

@@ -6,15 +6,15 @@ a {
 	font-family: 'Montserrat', sans-serif;
 }
 
-a:hover {
+/* a:hover {
 	color: rgb(40, 145, 92);
-}
+} */
 
 img {
   width: 100%;
 }
 
-header {
+/* header {
 	background: #fff;
 	width: 100%;
 	height: 76px;
@@ -23,8 +23,8 @@ header {
 	left: 0;
 	border-bottom: 4px solid rgb(0, 5, 10);
 	z-index: 100;
-}
-
+} */
+/* 
 #logo{
   margin: 20px;
 	float: left;
@@ -32,26 +32,26 @@ header {
 	height: 40px;
 	background: url(logo.svg) no-repeat center;
   display: block;
-}
+} */
 
-nav {
+/* nav {
 	float: right;
   padding: 20px;
-}
+} */
 
-#menu-icon {
+/* #menu-icon {
 	display: none;
 	width: 40px;
 	height: 40px;
 	background: rgb(255, 255, 255) url(img/hamburger.svg) center;
-}
+} */
 
-a:hover#menu-icon {
+/* a:hover#menu-icon {
 	background-color: rgb(255, 255, 255);
 	border-radius: 4px 4px 0 0;
-}
+} */
 
-ul {
+/* ul {
 	list-style: none;
 }
 
@@ -59,12 +59,12 @@ li {
 	display: inline-block;
 	float: left;
 	padding: 10px
-}
+} */
 
-.current {
+/* .current {
   color: rgb(40, 145, 92);
   padding: 1em;
-}
+} */
 
 #hero {
   display: block;
