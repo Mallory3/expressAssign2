@@ -1,0 +1,293 @@
+body {
+	background-color:black;
+}
+
+a {
+	color: rgb(2, 0, 5);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 2.5ch;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+	color: rgb(40, 145, 92);
+}
+
+img {
+  width: 100%;
+}
+
+header {
+	background: #fff;
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 4px solid rgb(0, 5, 10);
+	z-index: 100;
+}
+
+#logo{
+  margin: 10px;
+	float: left;
+	width: 60px;
+	height: 40px;
+  display: block;
+}
+
+nav {
+	float: right;
+  padding: 20px;
+}
+
+#menu-icon {
+	display: none;
+	width: 40px;
+	height: 40px;
+}
+
+a:hover#menu-icon {
+	background-color: rgb(255, 255, 255);
+	border-radius: 4px 4px 0 0;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	float: left;
+	padding: 10px
+}
+
+.current {
+  color: rgb(40, 145, 92);
+  padding: 1em;
+}
+
+#hero {
+  background-image: url("https://images.unsplash.com/photo-1532529867795-3c83442c1e5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+  min-height: 100vmin;
+  max-height: 100vmax;
+  min-width: 100vmin;
+  max-width: 100vmax;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+	background-attachment: fixed;
+	margin-bottom: 10em;
+}
+
+
+#herotitle {
+	background: -webkit-linear-gradient(#f84a06, #f023f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	position:absolute;
+	top: 20%;
+	left: 87%;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	transform: rotate(-deg);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 9vmin;
+}
+
+
+#title {
+	position: absolute;
+	top: 115%;
+	margin: 0;
+	padding: 0;
+}
+
+#pic {
+	min-width: 80vw;
+	min-height: 30vh;
+}
+
+#eye {
+	background: -webkit-linear-gradient(#f84a06, #f023f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	transform: rotate(-84deg);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15vmin;
+	position: absolute;
+	top:10%;
+	left: 39%;
+}
+
+/* Gallery */
+
+#image {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	margin: 3em;
+	grid-gap: 5em;
+	position: absolute;
+	top: 270%;
+}
+	
+	
+.gallery {
+	border: 5px solid black;
+	border-radius: 1%;
+	margin: 0;
+}
+
+.gallery {
+	width: 100%;
+	height: 50vh;
+	opacity: .95;
+	border-radius: 5%;
+	object-fit: cover;
+}
+
+#art {
+	grid-row-start: 3;
+	grid-column: 1/-1;
+}
+	
+.gallery:hover {
+transform: scale(1.1);
+transition:
+	background-color 1s,
+	box-shadow 1s,
+	transform .5s;
+opacity: 1;
+}
+	
+footer {
+	background-color: black;
+	color: white;
+	height:100px;
+	width:100%;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+	
+#copy {
+	font-size: 2.5vh;
+	grid-column: 2/3;
+}
+	
+div #socialicon {
+	grid-row-start: 2;
+	grid-column: 2/3;
+}
+	
+#socialicon {
+	grid-row-start: 2;
+	grid-column: 2/3;
+	margin: auto;
+	display: flex;
+}
+	
+.social {
+		margin: 20px;
+		width: 60px;
+		height: 40px;
+		display: block;
+}
+
+	/* @media */
+
+@media only screen and (max-width : 850px) {
+	header {
+		position: fixed;
+	}
+
+	#menu-icon {
+		display:inline-block;
+	}
+
+	nav ul, nav:active ul { 
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid rgb(7, 0, 0);
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	nav:hover ul {
+		display: block;
+	}
+}
+
+@media (max-width: 575px) {
+	#hero {
+		background-image: url("https://images.unsplash.com/photo-1532529867795-3c83442c1e5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+		background-size: contain; background-position: top;}
+}
+
+@media (max-width:850px) {
+	#image {grid-template-columns: 1fr;}
+}
+
+@media (max-width:1600px) {
+
+}
+
+@media (max-width:1200px) {
+	#image {
+	top: 240%;}
+	#eye {
+			top: 7%}
+}
+
+
+@media (max-width:1000px) {
+	#image {
+	top: 228%;}
+	#eye {
+		top: 6%;}
+	#herotitle {
+		left: 85%
+	} 
+}
+	
+@media (max-width:870px) {
+	#image {
+		top: 210%;}
+	#eye {
+		top: 5%;
+	}
+	#herotitle {
+		left: 83%;
+		top: 15%;
+	} 
+}
+
+@media (max-width: 600px) {
+	#image {
+		top: 175%;}
+	#eye {
+		top: 5%;
+	}
+	#herotitle {
+		left: 80%;
+		top: 15%;
+	}
+}
