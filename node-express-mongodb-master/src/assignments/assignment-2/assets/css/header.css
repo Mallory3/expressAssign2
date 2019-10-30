@@ -1,0 +1,124 @@
+.wrapper {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+HEADER
+- - - - - - - - - - - - - - - - - - - - - - - - */
+header {
+  height: 80px;
+  background: #333;
+}
+
+header nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+header .logo {
+  background: url('./assets/logo.svg');
+  height: 30px;
+  width: 30px;
+  background-size: 30px;
+}
+
+header .menu {
+  background: url('./assets/menu.svg');
+  height: 30px;
+  width: 30px;
+  background-size: 30px;
+  display: none;
+}
+
+header .close {
+  background: url('./assets/close.svg');
+  height: 30px;
+  width: 30px;
+  background-size: 30px;
+  display: none;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+header li {
+  color: white;
+  list-style: none;
+  margin: 0;
+ 
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+ 
+}
+
+@media(max-width: 600px) {
+  header ul {
+      position: fixed; 
+      top: 0;
+      bottom: 0;
+      right: -300px;
+      width: 300px;
+      height: 100vh;
+      background: #333;
+      transition: transform 0.2s; 
+      transform: translateX(0px); 
+  }
+
+  header .menu {
+      display: block;
+  }
+
+  header .close {
+      display:block;
+      position: fixed;
+      top: 1em;
+      bottom: 0;
+      right: 1em;
+  }
+ 
+  .openState {
+      transform: translateX(-300px); 
+      transition: transform 0.2s; 
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: left;
+      justify-content: start; 
+      padding-top: 2em;
+      padding-left: 2em;
+  }
+
+  header li {
+      color: white;
+      text-decoration: none;
+      padding: .5em;
+  }
+
+
+  
+
+  .closedState {
+      transform: translateX(0px);
+      transition: transform 0.2s; 
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: left;
+      justify-content: start; 
+      padding-top: 2em;
+      padding-left: 2em;    
+  }
+}
+

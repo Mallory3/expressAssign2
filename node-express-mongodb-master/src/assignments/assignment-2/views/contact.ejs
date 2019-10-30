@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Homepage</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/font.css">
-  <link rel="stylesheet" href="css/contact.css">
-</head>
-<body>
-  <header>
-    <a href="index.html" id="logo"></a>
-    <nav>
-    <a href="#" id="menu-icon"></a>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="about">About</a></li>
-      <li><a href="gallery">Gallery</a></li>
-      <li><a href="contact" class="current">Contact</a></li>
-    </ul>
-    </nav>
-  </header>
+<%- include partials/header %>
   <div id="quote">
     <h1>Something wonderful is about to happen...</h1>
   </div>
@@ -40,13 +17,4 @@
       </fieldset>
     </form>
   </main>  
-  <footer>
-    <div id="copy">&copy; by Mallory</div>
-    <div id="socialicon">
-      <img class="social" src="code.svg" alt="codepen">
-      <img class="social" src="git.svg" alt="github">
-      <img class="social" src="linked.svg" alt="linkedin">
-    </div>
-  </footer>  
-</body>
-</html>
+  <%- include partials/footer %>

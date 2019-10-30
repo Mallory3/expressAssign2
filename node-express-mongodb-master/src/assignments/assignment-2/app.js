@@ -2,6 +2,8 @@
 const express = require('express');
 //require path module to deal with file paths
 const path = require('path');
+//require pageInfo
+const pageInfo = require('./pageInfo');
 //envoke express
 const app = express();
 
@@ -10,18 +12,20 @@ app.set('view engine','ejs');
 
 
 //use app.get to render the .ejs
+//required pageInfo to loop through values in the pageInfo module in the header paritial so that the correct title and css pages were linked
 app.get('/:page', function(request, response){
  
-  response.render(request.params.page,{});
+  response.render(request.params.page,pageInfo[request.params.page]);
 })
 
 app.get('/', function(request, response){
-  response.render('index', {});
+  response.render('index',pageInfo.index);
 })
 
 
 
-//set public as a static folder so it renders all the files within it
+
+//set assets as a static folder so it renders all the files within it
 app.use(express.static(path.join(__dirname, 'assets')));
 
 
