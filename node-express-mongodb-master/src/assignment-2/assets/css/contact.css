@@ -64,20 +64,6 @@ li {
   padding: 1em;
 }
 
-
-/* #hero {
-  background-image: url("https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
-  min-height: 100vmin;
-  max-height: 100vmax;
-  min-width: 100vmin;
-  max-width: 100vmax;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top right;
-	background-attachment: fixed;
-	margin-bottom: 10em;
-} */
-
 #quote {
 padding: 5em;
 padding-bottom: 3em;
